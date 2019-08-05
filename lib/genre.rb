@@ -3,14 +3,14 @@ class Genre
   attr_reader :name, :genre
   attr_accessor :song
 
-  ALL = []
+  @@all = []
 
    def initialize(name)
     @name = name
   end
   
   def self.all
-    ALL
+    @@all
   end
 
    def songs
