@@ -2,15 +2,15 @@ class Doctor
 
    attr_reader :name, :appointment, :patient
 
-   ALL = []
+   @@all = []
 
    def initialize(name)
     @name = name
-    ALL << self
+    @@all << self
   end
 
    def self.all
-    ALL
+    @@all
   end
 
    def new_appointment(patient, date)
