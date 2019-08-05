@@ -8,6 +8,8 @@ class Genre
    def initialize(name)
     @name = name
   end
+  
+  def self.all
 
    def songs
     Song.all.select do |song|
